@@ -13,10 +13,13 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(quantity: u64) -> u64 {
+    match quantity > 40 {
+        true => quantity,
+        false => quantity * 2,
+    }
+}
 
 // Don't modify this function!
 #[test]
